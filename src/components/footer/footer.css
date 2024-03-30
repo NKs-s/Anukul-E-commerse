@@ -1,0 +1,53 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E2772;
+    padding: 2rem 0 1rem 0;
+    color: #fff;
+    gap: 1rem;
+    font-family: poppins;
+}
+.footer-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.footer-2{
+    text-align: center;
+}
+.footer-left img{
+    width: 10rem;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    font-size: 1rem;
+}
+.footer-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dealer-name img{
+    width: 8rem;
+}
+.dealer-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(72, 72, 255);
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
