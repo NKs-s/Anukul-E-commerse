@@ -1,0 +1,6 @@
+.product-image-dimension-fixer img{
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    width: 10px;
+}

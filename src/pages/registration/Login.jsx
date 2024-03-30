@@ -5,7 +5,8 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../fireabase/FirebaseConfig';
 import { toast } from 'react-toastify';
 import Loader from '../../components/loader/Loader';
-
+import Footer from '../../components/footer/Footer'
+import Top from './Top'
 function Login() {
     const context = useContext(myContext)
     const {loading, setLoading} = context;
@@ -41,6 +42,8 @@ function Login() {
     }
    
     return (
+        <>
+        <Top/>
         <div className=' flex justify-center items-center h-screen'>
             {loading && <Loader/>}
             <div className=' bg-gray-800 px-10 py-10 rounded-xl '>
@@ -77,6 +80,8 @@ function Login() {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 

@@ -6,7 +6,8 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth, fireDB } from '../../fireabase/FirebaseConfig';
 import { Timestamp, addDoc, collection } from 'firebase/firestore';
 import Loader from '../../components/loader/Loader';
-
+import Footer from '../../components/footer/Footer'
+import TopSignup from './TopSignup'
 function Signup() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -47,6 +48,8 @@ function Signup() {
     }
 
     return (
+        <>
+        <TopSignup/>
         <div className=' flex justify-center items-center h-screen'>
             {loading && <Loader/>}
             <div className=' bg-gray-800 px-10 py-10 rounded-xl '>
@@ -93,6 +96,8 @@ function Signup() {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 
