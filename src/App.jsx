@@ -20,6 +20,7 @@ import UpdateProduct from './pages/admin/page/UpdateProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from './pages/allproducts/Allproducts';
+
 function App() {
   return (
     <MyState>
